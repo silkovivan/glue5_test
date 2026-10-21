@@ -37,6 +37,8 @@ wasmparser = "0.261"
 
 [profile.release]
 debug = "line-tables-only"
+lto = "fat"
+codegen-units = 1
 
 # The game's generated C is always compiled with optimisations (see
 # glue5-game/build.rs); this only affects the Rust side.

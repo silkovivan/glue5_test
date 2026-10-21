@@ -18,4 +18,4 @@ rustflags = ["-Ctarget-cpu=apple-a12"]
 # the ARMv8.0 default; Rust has no stable v8.2a feature, so its parts that
 # code generation uses: LSE atomics, RDM and CRC.
 [target.aarch64-linux-android]
-rustflags = ["-Ctarget-feature=+lse,+rdm,+crc,+dotprod,+i8mm", "-Ctarget-cpu=cortex-a720"]
+rustflags = ["-Ctarget-feature=+lse,+rdm,+crc"]
